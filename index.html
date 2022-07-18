@@ -1,54 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cenima</title>
+    <title>SHOWTIME.cenima</title>
     <style>
-
+         footer{
+            font: size 2.1rem;
+         line-height: 1.4 ;
+         letter-spacing: 0.5rem;
+         text-align: center ;
+         color:white ;
+         margin: 50px;
+         }
+         #divmenu>#navmenu>#mainmenu>li{
+                display:inline-block;
+                vertical-align: top;
+            }
+            #divmenu>#navmenu>#mainmenu>li, #divmenu>#navmenu .submenu>li, #divmenu>#navmenu .subsubmenu>li{
+                list-style-type: none;
+            }
+            #divmenu>#navmenu>#mainmenu .submenu, #divmenu>#navmenu>#mainmenu .subsubmenu{
+                padding-left: 17px;
+                visibility: hidden;
+            }
+            #divmenu>#navmenu>#mainmenu>li:hover>.submenu{
+                visibility: visible;
+            }
+            #divmenu>#navmenu>#mainmenu>li>ul.submenu>li:hover+.subsubmenu{
+                visibility: visible;
+            }
+            #divmenu>#navmenu>#mainmenu>li>a{
+                text-decoration: none;
+            }
+            #navmenu>#mainmenu a{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color:navy;
+            }
+            #navmenu>#mainmenu>li>a::before{
+                content: "\1F4BC";
+            }
+            #navmenu>#mainmenu>:hover>a::before{
+                content: "\1F4A1";
+            }
+            #navmenu>#mainmenu ul.submenu>li.submain>a::after{
+                content: "\2B9B";
+                font-size:18px;
+                color: white;
+            }
+            #navmenu>#mainmenu ul.submenu>li.submain:hover>a::after{
+                content: "\2B99";
+                font-size:18px;
+                color:white;
+            }
+            #navmenu ul.submenu>li:not(.submain):hover, ul.subsubmenu>li:hover{
+                background-image:radial-gradient(cyan, turquoise);
+            }
+            
+        
     </style>
-    <link rel="stylesheet" href="./STLYE1.css">
+    <link rel="stylesheet" href="./index44.css">
 </head>
 <body>
-    <div id="banner" class="reo">
-        <div>
+    <Div id="cntr" width="100%">
+    <div id="first" class="tan">
+        <Img src="./images/SHOWTIME.png" width="100%" height="100px"></Img>
+         <div id="navigation" class="trd"></div>
+          
             
-            <div id="span" id="ron" width="20%">
-            <span id="sitetitle">LOS Santos</span><br>
-            <span id="sitemotto"> beyond popcorn </span>
-            <span id="sitetitle">LOS Santos</span>
-            <span id="sitemotto"> beyond popcorn </span>
-            <a href="#"> logo</a></div>
+    </div>
+    <div id="second" class="tan">
+         
+       
+        <div id="divcontent">
 
-        <input type="checkbox" id="menu-bar">
-        <label for="menu-bar"> Menu</label>
-        <nav id="nav" class="navbar">
-            <ul>
-                <li><a href="./INDEX44.html">HOME</a></li>
-                <li><a href="./movies.html"> MOVIES</a></li>
-                <li><a href="#"> UPCOMING</a></li>
-                    <ul id="ul">
-                       <li> <a href="./horror.html">Horror</a></li>
-                       <li><a href="./comedy.html">Comedy</a></li>
-                       <li><a href="./ACTION.html">Action</a></li>
-                       </ul>
-                <li><a href="#">CATEGORIES</a></li>
-                <li><a href="./CONTACT US.html">CONTACT US</a></li>
-                <li><a href="./FEEDBACK.html">FEEDBACK</a></li>
-            </ul>
+            <div id="divmenu">
+               <nav id="navmenu">  <div><label for="search" >search</label>
+            <input type="search" placeholder="search" width="50% "></div>
+                    <ul id="mainmenu">
 
-        </nav>
-         <label for="search">search</label>
-         <input type="search" placeholder="search">
-        <div id="divbody" class="reo">
+                        <li>
+                            <a href='./INDEX.html'>Home</a>
+                        </li>
 
+                        <li>
+                            <a href="./movies.html">MOVIES</a>
+                            <ul class="submenu">
+                                <li><a href="./UPCOMING.html">UPCOMING</a></li>
+                                <li><a href="showing times.html">SHOWING TIMES</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">CATEGORIES</a>
+                            <ul class="submenu">
+                                <li><a href="./horror.html">Horror</a></li>
+                                <li><a href="./ACTION.html">Action</a></li>
+                                <li><a href="./comedy.html">Comedy</a></li>
+                                
+                        
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="./CONTACT US.html">CONTACT US</a>
+                           
+                        
+                        </li>
+
+                        <li>
+                            <a href="./FEEDBACK.html">FEEDBACK</a>
+                            
+                        </li>
+
+                        
+                            
+            
+
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+        <br>
+        <div id="show" class="trd" >
+            
+        
         </div>
 
     </div>
-    
+</Div>
 </body>
-<footer>
-
-</footer>
-</html
+<footer> Copyright@SHOWTIME.cenima-2022</footer>
+</html>
